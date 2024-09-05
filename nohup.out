@@ -1,0 +1,342 @@
+2024-09-03T14:26:18.602+0530 I CONTROL  [initandlisten] MongoDB starting : pid=66099 port=27017 dbpath=data/db 64-bit host=C02Z335PLVCG
+2024-09-03T14:26:18.603+0530 I CONTROL  [initandlisten] db version v3.2.10
+2024-09-03T14:26:18.603+0530 I CONTROL  [initandlisten] git version: 79d9b3ab5ce20f51c272b4411202710a082d0317
+2024-09-03T14:26:18.603+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 0.9.8zh 14 Jan 2016
+2024-09-03T14:26:18.603+0530 I CONTROL  [initandlisten] allocator: system
+2024-09-03T14:26:18.603+0530 I CONTROL  [initandlisten] modules: none
+2024-09-03T14:26:18.603+0530 I CONTROL  [initandlisten] build environment:
+2024-09-03T14:26:18.604+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2024-09-03T14:26:18.604+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2024-09-03T14:26:18.604+0530 I CONTROL  [initandlisten] options: { storage: { dbPath: "data/db" } }
+2024-09-03T14:26:18.606+0530 I -        [initandlisten] Detected data files in data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2024-09-03T14:26:18.607+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=9G,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2024-09-03T14:26:19.314+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'data/db/diagnostic.data'
+2024-09-03T14:26:19.314+0530 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
+2024-09-03T14:26:19.316+0530 I NETWORK  [initandlisten] waiting for connections on port 27017
+========================================================================================
+=  Please ensure that you set the default write concern for the database by setting    =
+=   one of the options                                                                 =
+=                                                                                      =
+=     w: (value of > -1 or the string 'majority'), where < 1 means                     =
+=        no write acknowledgement                                                       =
+=     journal: true/false, wait for flush to journal before acknowledgement             =
+=     fsync: true/false, wait for flush to file system before acknowledgement           =
+=                                                                                      =
+=  For backward compatibility safe is still supported and                              =
+=   allows values of [true | false | {j:true} | {w:n, wtimeout:n} | {fsync:true}]      =
+=   the default value is false which means the driver receives does not                =
+=   return the information of the success/error of the insert/update/remove            =
+=                                                                                      =
+=   ex: new Db(new Server('localhost', 27017), {safe:false})                           =
+=                                                                                      =
+=   http://www.mongodb.org/display/DOCS/getLastError+Command                           =
+=                                                                                      =
+=  The default of no acknowledgement will change in the very near future                =
+=                                                                                      =
+=  This message will disappear when the default safe is set on the driver Db           =
+========================================================================================
+2024-09-03T14:26:20.656+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61602 #1 (1 connection now open)
+2024-09-03T14:26:20.657+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61603 #2 (2 connections now open)
+2024-09-03T14:26:20.658+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61604 #3 (3 connections now open)
+2024-09-03T14:26:20.658+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61605 #4 (4 connections now open)
+2024-09-03T14:26:20.659+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61606 #5 (5 connections now open)
+2024-09-03T14:26:20.659+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61607 #6 (6 connections now open)
+2024-09-03T14:26:20.660+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61608 #7 (7 connections now open)
+2024-09-03T14:26:20.660+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61609 #8 (8 connections now open)
+2024-09-03T14:26:20.661+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61610 #9 (9 connections now open)
+2024-09-03T14:26:20.661+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61611 #10 (10 connections now open)
+2024-09-03T14:26:20.661+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61612 #11 (11 connections now open)
+2024-09-03T14:26:20.662+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61613 #12 (12 connections now open)
+2024-09-03T14:26:20.662+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61614 #13 (13 connections now open)
+2024-09-03T14:26:20.663+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61615 #14 (14 connections now open)
+2024-09-03T14:26:20.663+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61616 #15 (15 connections now open)
+2024-09-03T14:26:20.663+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61617 #16 (16 connections now open)
+2024-09-03T14:26:20.664+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61618 #17 (17 connections now open)
+2024-09-03T14:26:20.664+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61619 #18 (18 connections now open)
+2024-09-03T14:26:20.664+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61620 #19 (19 connections now open)
+2024-09-03T14:26:20.665+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61621 #20 (20 connections now open)
+2024-09-03T14:26:20.665+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61622 #21 (21 connections now open)
+2024-09-03T14:26:20.665+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61623 #22 (22 connections now open)
+2024-09-03T14:26:20.665+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61624 #23 (23 connections now open)
+2024-09-03T14:26:20.666+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61625 #24 (24 connections now open)
+2024-09-03T14:26:20.666+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61626 #25 (25 connections now open)
+2024-09-03T14:26:20.666+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61627 #26 (26 connections now open)
+2024-09-03T14:26:20.667+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61628 #27 (27 connections now open)
+2024-09-03T14:26:20.667+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61629 #28 (28 connections now open)
+2024-09-03T14:26:20.667+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61630 #29 (29 connections now open)
+2024-09-03T14:26:20.667+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61631 #30 (30 connections now open)
+2024-09-03T14:26:20.668+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61632 #31 (31 connections now open)
+2024-09-03T14:26:20.668+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61633 #32 (32 connections now open)
+2024-09-03T14:26:20.668+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61634 #33 (33 connections now open)
+2024-09-03T14:26:20.669+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61635 #34 (34 connections now open)
+2024-09-03T14:26:20.669+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61636 #35 (35 connections now open)
+2024-09-03T14:26:20.669+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61637 #36 (36 connections now open)
+2024-09-03T14:26:20.669+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61638 #37 (37 connections now open)
+2024-09-03T14:26:20.670+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61639 #38 (38 connections now open)
+2024-09-03T14:26:20.670+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61640 #39 (39 connections now open)
+2024-09-03T14:26:20.670+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61641 #40 (40 connections now open)
+2024-09-03T14:26:20.671+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61642 #41 (41 connections now open)
+2024-09-03T14:26:20.671+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61643 #42 (42 connections now open)
+2024-09-03T14:26:20.672+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61644 #43 (43 connections now open)
+2024-09-03T14:26:20.672+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61645 #44 (44 connections now open)
+2024-09-03T14:26:20.672+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61646 #45 (45 connections now open)
+2024-09-03T14:26:20.672+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61647 #46 (46 connections now open)
+2024-09-03T14:26:20.673+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61648 #47 (47 connections now open)
+2024-09-03T14:26:20.673+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61649 #48 (48 connections now open)
+2024-09-03T14:26:20.673+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61650 #49 (49 connections now open)
+2024-09-03T14:26:20.674+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61651 #50 (50 connections now open)
+2024-09-03T14:26:20.674+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61652 #51 (51 connections now open)
+2024-09-03T14:26:20.674+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61653 #52 (52 connections now open)
+2024-09-03T14:26:20.675+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61654 #53 (53 connections now open)
+2024-09-03T14:26:20.675+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61655 #54 (54 connections now open)
+2024-09-03T14:26:20.675+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61656 #55 (55 connections now open)
+2024-09-03T14:26:20.676+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61657 #56 (56 connections now open)
+2024-09-03T14:26:20.676+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61658 #57 (57 connections now open)
+2024-09-03T14:26:20.676+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61659 #58 (58 connections now open)
+2024-09-03T14:26:20.676+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61660 #59 (59 connections now open)
+2024-09-03T14:26:20.677+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61661 #60 (60 connections now open)
+2024-09-03T14:26:20.677+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61662 #61 (61 connections now open)
+2024-09-03T14:26:20.678+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61663 #62 (62 connections now open)
+2024-09-03T14:26:20.678+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61664 #63 (63 connections now open)
+2024-09-03T14:26:20.678+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61665 #64 (64 connections now open)
+2024-09-03T14:26:20.679+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61666 #65 (65 connections now open)
+2024-09-03T14:26:20.679+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61667 #66 (66 connections now open)
+2024-09-03T14:26:20.680+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61668 #67 (67 connections now open)
+2024-09-03T14:26:20.680+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61669 #68 (68 connections now open)
+2024-09-03T14:26:20.681+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61670 #69 (69 connections now open)
+2024-09-03T14:26:20.681+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61671 #70 (70 connections now open)
+2024-09-03T14:26:20.681+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61672 #71 (71 connections now open)
+2024-09-03T14:26:20.682+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61673 #72 (72 connections now open)
+2024-09-03T14:26:20.682+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61674 #73 (73 connections now open)
+2024-09-03T14:26:20.682+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61675 #74 (74 connections now open)
+2024-09-03T14:26:20.683+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61676 #75 (75 connections now open)
+2024-09-03T14:26:20.683+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61677 #76 (76 connections now open)
+2024-09-03T14:26:20.684+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61678 #77 (77 connections now open)
+2024-09-03T14:26:20.684+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61679 #78 (78 connections now open)
+2024-09-03T14:26:20.684+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61680 #79 (79 connections now open)
+2024-09-03T14:26:20.685+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61681 #80 (80 connections now open)
+2024-09-03T14:26:20.685+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61682 #81 (81 connections now open)
+2024-09-03T14:26:20.685+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61683 #82 (82 connections now open)
+2024-09-03T14:26:20.686+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61684 #83 (83 connections now open)
+2024-09-03T14:26:20.686+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61685 #84 (84 connections now open)
+2024-09-03T14:26:20.686+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61686 #85 (85 connections now open)
+2024-09-03T14:26:20.686+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61687 #86 (86 connections now open)
+2024-09-03T14:26:20.687+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61688 #87 (87 connections now open)
+2024-09-03T14:26:20.687+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61689 #88 (88 connections now open)
+2024-09-03T14:26:20.688+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61690 #89 (89 connections now open)
+2024-09-03T14:26:20.688+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61691 #90 (90 connections now open)
+2024-09-03T14:26:20.688+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61692 #91 (91 connections now open)
+2024-09-03T14:26:20.689+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61693 #92 (92 connections now open)
+2024-09-03T14:26:20.689+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61694 #93 (93 connections now open)
+2024-09-03T14:26:20.689+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61695 #94 (94 connections now open)
+2024-09-03T14:26:20.690+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61696 #95 (95 connections now open)
+2024-09-03T14:26:20.690+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61697 #96 (96 connections now open)
+2024-09-03T14:26:20.690+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61698 #97 (97 connections now open)
+2024-09-03T14:26:20.690+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61699 #98 (98 connections now open)
+2024-09-03T14:26:20.691+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61700 #99 (99 connections now open)
+2024-09-03T14:26:20.691+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61701 #100 (100 connections now open)
+DB connected
+info: socket.io started
+2024-09-03T14:41:19.633+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+{ sendEmail: false,
+  sendEmailOnlyOnFailure: false,
+  ignoreAfterState: false,
+  ignoreStatus: false,
+  ignoreScreenshots: false,
+  allScreenshots: true,
+  testcases: 
+   [ { rowIndex: '',
+       tcData: '',
+       testcaseID: '598adba5afed206e212e44cc',
+       _id: '1502272441720-18713-11722',
+       resultID: '59982119b28cf3e5c701ec23',
+       startAction: '',
+       endAction: '',
+       retryCount: 0 } ],
+  variables: 
+   [ { name: 'Browser',
+       value: 'Chrome',
+       tag: [Object],
+       possibleValues: [Object],
+       _id: '582ba6dc6ccd64fd74b5bf95' } ],
+  executionID: '1502272105271-30212-30740',
+  machines: 
+   [ { host: '127.0.0.1',
+       vncport: '3006',
+       port: '5010',
+       maxThreads: 1,
+       threads: 1,
+       tag: '',
+       state: '',
+       baseState: '',
+       resultID: '',
+       baseStateTCID: '1502272105278-9297-18099',
+       result: '',
+       description: 'host name is:C02PH7D5G3QD.local',
+       machineVars: [],
+       roles: [Object],
+       _id: '598ab8cd5bd23da61b22b67b' } ],
+  templates: [] }
+validating thread count 1
+2024-09-03T15:37:29.352+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+false
+false
+{ sendEmail: false,
+  sendEmailOnlyOnFailure: false,
+  ignoreAfterState: false,
+  ignoreStatus: false,
+  ignoreScreenshots: false,
+  allScreenshots: true,
+  testcases: 
+   [ { rowIndex: '',
+       tcData: '',
+       testcaseID: '598adba5afed206e212e44cc',
+       _id: '1502272441720-18713-11722',
+       resultID: '66d6dfd4152f1100004dfc3a',
+       startAction: '',
+       endAction: '',
+       retryCount: 0 } ],
+  variables: 
+   [ { name: 'Browser',
+       value: 'Chrome',
+       tag: [Object],
+       possibleValues: [Object],
+       _id: '582ba6dc6ccd64fd74b5bf95' } ],
+  executionID: '1502272105271-30212-30740',
+  machines: 
+   [ { host: '127.0.0.1',
+       vncport: '3006',
+       port: '5010',
+       maxThreads: 1,
+       threads: 1,
+       tag: '',
+       state: '',
+       baseState: '',
+       resultID: '',
+       baseStateTCID: '1502272105278-9297-18099',
+       result: '',
+       description: 'host name is:C02PH7D5G3QD.local',
+       machineVars: [],
+       roles: [Object],
+       _id: '598ab8cd5bd23da61b22b67b' } ],
+  templates: [] }
+validating thread count 1
+false
+false
+{ sendEmail: false,
+  sendEmailOnlyOnFailure: false,
+  ignoreAfterState: false,
+  ignoreStatus: false,
+  ignoreScreenshots: false,
+  allScreenshots: true,
+  testcases: 
+   [ { rowIndex: '',
+       tcData: '',
+       testcaseID: '598adba5afed206e212e44cc',
+       _id: '1502272441720-18713-11722',
+       resultID: '66d6e18f152f1100004dfc3f',
+       startAction: '',
+       endAction: '',
+       retryCount: 0 } ],
+  variables: 
+   [ { name: 'Browser',
+       value: 'Chrome',
+       tag: [Object],
+       possibleValues: [Object],
+       _id: '582ba6dc6ccd64fd74b5bf95' } ],
+  executionID: '1502272105271-30212-30740',
+  machines: 
+   [ { host: '127.0.0.1',
+       vncport: '3006',
+       port: '5010',
+       maxThreads: 1,
+       threads: 1,
+       tag: '',
+       state: '',
+       baseState: '',
+       resultID: '',
+       baseStateTCID: '1502272105278-9297-18099',
+       result: '',
+       description: 'host name is:C02PH7D5G3QD.local',
+       machineVars: [],
+       roles: [Object],
+       _id: '598ab8cd5bd23da61b22b67b' } ],
+  templates: [] }
+validating thread count 1
+false
+false
+{ sendEmail: false,
+  sendEmailOnlyOnFailure: false,
+  ignoreAfterState: false,
+  ignoreStatus: false,
+  ignoreScreenshots: false,
+  allScreenshots: true,
+  testcases: 
+   [ { rowIndex: '',
+       tcData: '',
+       testcaseID: '598adba5afed206e212e44cc',
+       _id: '1502272441720-18713-11722',
+       resultID: '66d6e237152f1100004dfc44',
+       startAction: '',
+       endAction: '',
+       retryCount: 0 } ],
+  variables: 
+   [ { name: 'Browser',
+       value: 'Chrome',
+       tag: [Object],
+       possibleValues: [Object],
+       _id: '582ba6dc6ccd64fd74b5bf95' } ],
+  executionID: '1502272105271-30212-30740',
+  machines: 
+   [ { host: '127.0.0.1',
+       vncport: '3006',
+       port: '5010',
+       maxThreads: 1,
+       threads: 1,
+       tag: '',
+       state: '',
+       baseState: '',
+       resultID: '',
+       baseStateTCID: '1502272105278-9297-18099',
+       result: '',
+       description: 'host name is:C02PH7D5G3QD.local',
+       machineVars: [],
+       roles: [Object],
+       _id: '598ab8cd5bd23da61b22b67b' } ],
+  templates: [] }
+validating thread count 1
+false
+false
+2024-09-03T15:52:29.650+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-03T16:07:29.931+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-03T16:22:30.249+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-03T16:37:30.593+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-03T16:52:30.883+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-03T19:14:33.735+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain address information for hostname C02Z335PLVCG: nodename nor servname provided, or not known
+2024-09-04T11:19:43.920+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-04T11:34:44.149+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-04T11:49:44.427+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-04T12:04:44.678+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-04T12:19:44.909+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-04T12:45:28.859+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-04T13:00:29.127+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-04T13:15:29.408+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-04T13:30:29.861+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-04T13:45:30.129+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-04T14:10:00.149+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-04T14:25:00.522+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-04T14:40:00.798+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-04T14:55:00.990+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-04T15:10:01.266+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-04T15:43:16.879+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-04T15:58:17.213+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-04T16:13:17.566+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-04T16:35:51.621+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-04T17:31:16.224+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-04T19:32:38.431+0530 I COMMAND  [PeriodicTaskRunner] task: UnusedLockCleaner took: 363ms
+2024-09-05T11:50:49.900+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-05T12:05:50.298+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-05T12:20:50.568+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-05T12:46:06.496+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-05T13:01:06.730+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
+2024-09-05T13:36:32.888+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (172.20.79.127, "nodename nor servname provided, or not known"), (172.20.79.127, "nodename nor servname provided, or not known") ]
